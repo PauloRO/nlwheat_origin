@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Paulo Roberto</title>
     
     <link rel="stylesheet" href="style.css">
@@ -19,14 +21,14 @@
                 <span>
                     <img src="images/buildlogo.png" alt="Selo Rockeseat">
                 </span>
-                <img src="images/paulo.jpg" alt="Foto Pessoal">
+                <img src="https://lorempixel.com/185/185/people/" alt="Foto Pessoal" id="userImage">
             </div>
-            <h1 id="userName">Paulo Oliveira</h1>
-            <a href="https://github.com/PauloRO" target="_blank">
+            <h1 id="userName">Mayk Brito</h1>
+            <a id="userLink" href="https://github.com/PauloRO" target="_blank">
                 <img src="images/github.png" alt="ícone github" >
-                PauloRO</a>
+                <span id="userLogin">Mayk Brito</span></a>
 
-            <p>Apenas um jovem perdido na vida tentando virar Dev. Front-End</p>
+            <p id="userBio">Apenas um jovem perdido na vida tentando virar Dev. Front-End</p>
 
             <ul id="socialLinks">
                 <li class="instagram">
@@ -43,27 +45,7 @@
         </div>
     </main>
 
-    <script>
-
-        const linksSocialMedia = {
-            github: 'PauloRO',
-            twitter: 'FoogZz',
-            instagram: '_ypaulo',
-        }
-
-        function changeSocialMediaLinks(){
-            for (let li of socialLinks.children){
-                const social = li.getAttribute('class')
-
-                li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
-
-                alert(li.children[0].href)
-            }
-        }
-
-        changeSocialMediaLinks()
-
-    </script>
+    <script src="main.js"></script>
 
 </body>
 </html>
