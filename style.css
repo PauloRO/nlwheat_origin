@@ -168,4 +168,7 @@ ul {
         background-color: #121214;
     }
     
+    ul {
+        margin-top: 2rem;
+    }
 }
